@@ -7,7 +7,7 @@ use League\OAuth2\Client\Token\AccessToken;
 
 class Weibo extends \League\OAuth2\Client\Provider\AbstractProvider
 {
-    public $responseType = 'string';
+    public $responseType = 'json';
     public $domain = 'https://api.weibo.com/oauth2';
     public $apiDomain = 'https://api.weibo.com/2';
     public $site = 'http://weibo.com/';

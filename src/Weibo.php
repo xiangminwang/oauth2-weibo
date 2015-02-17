@@ -38,7 +38,7 @@ class Weibo extends \League\OAuth2\Client\Provider\AbstractProvider
         $user->imageUrl = isset($response->avatar_large) ? $response->avatar_large : null;
         $user->description = isset($response->description) ? $response->description : null;
         $user->urls = [
-            'profile' => $site . (isset($response->profile_url) ? $response->profile_url : $response->id),
+            'profile' => $this->site . (isset($response->profile_url) ? $response->profile_url : $response->id),
             'site' => isset($response->url) && $response->url ? $response->url : null,
         ];
 

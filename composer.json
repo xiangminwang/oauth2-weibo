@@ -1,6 +1,7 @@
 {
     "name": "xiangminwang/oauth2-weibo",
     "description": "Weibo provider for league/oauth2-client",
+    "version": "0.1.0",
     "license": "MIT",
     "authors": [
         {
